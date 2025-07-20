@@ -12,5 +12,5 @@ const defaultStyles=" rounded-md flex items-center"
 
 export const Button=(props)=>{
     const { variant, size, text, startIcon, onClick } = props;
-    return <button className={variantStyles[variant]+" "+sizeStyles[size]+ defaultStyles}>{startIcon?<div className="pr-2">{startIcon}</div>:null}{text}</button>}
+    return <button className={variantStyles[variant]+" "+sizeStyles[size]+ defaultStyles}>{startIcon?<div className="pr-2 font-light">{startIcon}</div>:null}{text}</button>}
 
