@@ -22,7 +22,11 @@ function App() {
               text="Add Content"
               startIcon={<Plus size="md" />}
             />
-            <Card />
+            <div className="flex items-start gap-4">
+            <Card title="Youtube Card" type="youtube" link="https://www.youtube.com/watch?v=CqWF2fZJ_p0"/>
+            <Card title="Twitter Card" type="twitter" link="https://x.com/elonmusk/status/1946759974522356064"/>
+            </div>
+            
           </div>
         </div>
       </div>
