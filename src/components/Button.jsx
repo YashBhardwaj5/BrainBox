@@ -8,9 +8,9 @@ const sizeStyles={
     "md":"py-2 px-4 text-md",
     "lg":"py-4 px-6 text-lg",
 }
-const defaultStyles=" rounded-md flex items-center"
+const defaultStyles=" rounded-md flex items-center cursor-pointer"
 
 export const Button=(props)=>{
     const { variant, size, text, startIcon, onClick } = props;
-    return <button className={variantStyles[variant]+" "+sizeStyles[size]+ defaultStyles}>{startIcon?<div className="pr-2 font-light">{startIcon}</div>:null}{text}</button>}
+    return <button onClick={onClick} className={variantStyles[variant]+" "+sizeStyles[size]+ defaultStyles}>{startIcon?<div className="pr-2 font-light">{startIcon}</div>:null}{text}</button>}
 

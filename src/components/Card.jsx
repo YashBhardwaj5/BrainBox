@@ -3,7 +3,7 @@ import { ShareIcon } from "../icons/ShareIcon";
 export const Card = (props) => {
     const {title,type,link}=props;
     return (
-    <div className="bg-white rounded-md p-4 outline-slate-200 border max-w-72 border-gray-200">
+    <div className="bg-white rounded-md p-4 outline-slate-200 border max-w-72 border-gray-200 min-h-48 min-w-72">
       <div className="flex justify-between items-center align-middle">
         <div className="flex items-center text-md">
           <div className="text-gray-500 pr-2">
