@@ -5,13 +5,15 @@ import { Plus } from "./icons/Plusicon";
 import { ShareIcon } from "./icons/ShareIcon";
 import { CreateContentModal } from "./components/CreateContentModal";
 import { useState } from "react";
+import { Sidebar } from "./components/Sidebar";
 function App() {
-  const [ModalOpen,setModalChange]=useState(true);
+  const [ModalOpen,setModalChange]=useState(false);
 
   return (
-    <>    <CreateContentModal open={ModalOpen} onClose={()=>{
+    <><CreateContentModal open={ModalOpen} onClose={()=>{
       setModalChange(false);
     }}></CreateContentModal>
+          <Sidebar/>
           <div className="bg-neutral-100 p-4 min-h-screen ml-72">
             <div className="flex justify-end gap-2">
 

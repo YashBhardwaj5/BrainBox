@@ -6,8 +6,8 @@ export const CreateContentModal = (props) => {
   return (
     <>
       {open === true && (<div>
-        <div className="w-screen h-screen fixed top-0 left-0 bg-slate-500 opacity-60"></div>
-        <div className="w-screen h-screen fixed flex justify-center top-0 left-0">
+        <div className="w-screen h-screen fixed top-0 left-0 bg-slate-500 opacity-60 z-40"></div>
+        <div className="w-screen h-screen fixed flex justify-center top-0 left-0 z-50">
           <div className="flex flex-col justify-center">
             <div className="bg-white rounded-md p-4">
                 <div className="flex justify-end cursor-pointer" onClick={onClose}>
