@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { CrossIcon } from "./CrossIcon";
 import { Button } from "./Button";
+import { Input } from "./Input";
 export const CreateContentModal = (props) => {
   const { open, onClose } = props;
   return (
@@ -28,7 +29,4 @@ export const CreateContentModal = (props) => {
     </>
   );
 };
-const Input=(props)=>{
-    const {placeholder,onChange}=props;
-    return <div><input  type="text" placeholder={placeholder} className="px-4 py-2 border rounded m-2" onChange={onChange} /></div>
-}
+
