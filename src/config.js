@@ -1,0 +1,1 @@
+export const backenduri="http://localhost:3000";
