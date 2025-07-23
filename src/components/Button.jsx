@@ -11,6 +11,6 @@ const sizeStyles={
 const defaultStyles=" rounded-md flex items-center cursor-pointer"
 
 export const Button=(props)=>{
-    const { variant, size, text, startIcon, onClick,fullwidth } = props;
-    return <button onClick={onClick} className={variantStyles[variant]+" "+sizeStyles[size]+ defaultStyles+`${fullwidth?" w-full flex justify-center items-center":""}`}>{startIcon?<div className="pr-2 font-light">{startIcon}</div>:null}{text}</button>}
+    const { variant, size, text, startIcon, onClick,fullwidth,type } = props;
+    return <button type={type} onClick={onClick} className={variantStyles[variant]+" "+sizeStyles[size]+ defaultStyles+`${fullwidth?" w-full flex justify-center items-center":""}`}>{startIcon?<div className="pr-2 font-light">{startIcon}</div>:null}{text}</button>}
 
